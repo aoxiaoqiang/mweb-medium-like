@@ -1,7 +1,7 @@
 <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2015
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+   <p class="copyright">Copyright &copy; 2020
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp;
 Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
   </div>
 </div>
@@ -12,7 +12,7 @@ Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
 
 {% if ext_disqus_shortname.length %}
 <script type="text/javascript">
-    var disqus_shortname = '{{ ext_disqus_shortname }}'; 
+    var disqus_shortname = '{{ ext_disqus_shortname }}';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -22,7 +22,7 @@ Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
 </script>
 
 <script type="text/javascript">
-var disqus_shortname = '{{ ext_disqus_shortname }}'; 
+var disqus_shortname = '{{ ext_disqus_shortname }}';
 
 (function () {
 var s = document.createElement('script'); s.async = true;
@@ -31,7 +31,7 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 </script>
-{% /if %}  
+{% /if %}
 {% if ext_duoshuo_shortname.length %}
 
 <script type="text/javascript">
@@ -41,11 +41,11 @@ var duoshuoQuery = {short_name:'{{ ext_duoshuo_shortname }}'};
     ds.type = 'text/javascript';ds.async = true;
     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
     ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
+    (document.getElementsByTagName('head')[0]
      || document.getElementsByTagName('body')[0]).appendChild(ds);
   })();
   </script>
-{% /if %}    
+{% /if %}
 
     <script src="asset/js/foundation.min.js"></script>
     <script>
@@ -61,7 +61,7 @@ var duoshuoQuery = {short_name:'{{ ext_duoshuo_shortname }}'};
       $(window).load(function(){
           fixSidebarHeight();
       });
-     
+
     </script>
 
     {{ seqAndFlowChartSupport }}

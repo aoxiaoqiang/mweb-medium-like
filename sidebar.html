@@ -20,11 +20,11 @@
 {% if ext_github_url.length %}<a target="_blank" class="github" target="_blank" href="{{ ext_github_url }}" title="GitHub">GitHub</a>{% /if %}
 {% if ext_email.length %}<a target="_blank" class="email" href="mailto:{{ ext_email }}" title="Email">Email</a>{% /if %}
   <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
+
               	 </div>
           	</div>
 
-             {% if ext_global_notice.length %}  
+             {% if ext_global_notice.length %}
              <div id="site-categories" class="side-item ">
                 <div class="side-header">
                   <h2>Important</h2>
@@ -39,14 +39,14 @@
 
               <div id="site-categories" class="side-item ">
                 <div class="side-header">
-                  <h2>Categories</h2>
+                  <h2>文章分类</h2>
                 </div>
                 <div class="side-content">
 
       	<p class="cat-list">
         {% for p in categoriesTree %}
             <a href="{{ p.url }}"><strong>{{ p.name }}</strong></a>
-        {% /for %} 
+        {% /for %}
         </p>
 
 
@@ -55,7 +55,7 @@
 
               <div id="site-categories" class="side-item">
                 <div class="side-header">
-                  <h2>Recent Posts</h2>
+                  <h2>最近发布</h2>
                 </div>
                 <div class="side-content">
                 <ul class="posts-list">
@@ -65,7 +65,7 @@
 			        <a href="{{ p.url }}">{{ p.title }}</a>
 			      </li>
 		     {% /if %}
-		  {% /for %} 
+		  {% /for %}
 		  		</ul>
                 </div>
               </div>

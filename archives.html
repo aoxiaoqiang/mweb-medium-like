@@ -9,7 +9,7 @@
         <h1>Archives</h1>
         <div class="markdown-body archives-wrap">
           {% for p in posts %}
-            {% if p.year.length %} 
+            {% if p.year.length %}
                 <h1>{{ p.year }}</h1>
             {% /if %}
             <div class="article">
@@ -18,14 +18,14 @@
               </a>
               <div class="read-more clearfix">
                 <span class="date">{{p.date}}</span>
-                {% if p.cats.@count %}<span>posted in&nbsp;</span> {% /if %}
+                {% if p.cats.@count %}<span>分类:</span> {% /if %}
                 {% for cat in p.cats %}
                     <span class="posted-in"><a href='{{ cat.url }}'>{{ cat.name }}</a></span>
-                {% /for %} 
+                {% /for %}
               </div>
             </div><!-- article -->
 
-          {% /for %} 
+          {% /for %}
         </div>
       </div>
   </div>

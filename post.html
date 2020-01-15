@@ -11,15 +11,15 @@
               <div class="f-img"><img src="{{ post.ext_featured_image }}" /></div>
           {% /if %}
           <h1>{{ post.title }}</h1>
-     
+
         <div class="read-more clearfix">
           <span class="date">{{ post.date }}</span>
 
-          {% if post.cats.@count %}<span>posted in&nbsp;</span> {% /if %}
+          {% if post.cats.@count %}<span>分类:</span> {% /if %}
           {% for cat in post.cats %}
               <span class="posted-in"><a href='{{ cat.url }}'>{{ cat.name }}</a></span>
-          {% /for %} 
-         
+          {% /for %}
+
           <span class="comments">
             {% if ext_disqus_shortname.length %}
               <a href="{{ siteURL }}{{post.url}}#disqus_thread">comments</a>
@@ -36,7 +36,7 @@
       <div class="article-content">
       {{ post.content }}
 
-    
+
 
       </div>
 
@@ -44,7 +44,7 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       {% if postNav.prev %}
-          <a href="{{ postNav.prev.url }}" 
+          <a href="{{ postNav.prev.url }}"
           title="Previous Post: {{ postNav.prev.title }}">&laquo; {{ postNav.prev.title }}</a>
       {% /if %}
         </p>
@@ -52,7 +52,7 @@
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       {% if postNav.next %}
-          <a  href="{{ postNav.next.url }}" 
+          <a  href="{{ postNav.next.url }}"
           title="Next Post: {{ postNav.next.title }}">{{ postNav.next.title }} &raquo;</a>
       {% /if %}
       </p>

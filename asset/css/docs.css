@@ -3,8 +3,13 @@
 	background-color: rgba(255,255,255,0.2);
 }
 
-
-.top-bar,.tab-bar{ background-color: #fff; height: 65px;  border-bottom: solid 1px #F5F5F5;}
+/* 顶部导航 */
+.top-bar,.tab-bar{
+  background-color: #fff;
+  border-bottom: solid 1px #F5F5F5;
+  height: 65px;
+  font-size: 16px;
+}
 
 .tab-bar{ padding-top: 6px; height: 59px;}
 .tab-bar .menu-icon{ width: 100%; color: #333; }
@@ -14,43 +19,44 @@
 
 .top-bar-section ul li{ background: transparent;}
 .top-bar-section li:not(.has-form){   display: inline-block;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
-.top-bar-section li{ }
+.top-bar-section li{ height: 65px; }
 #sidebar{ margin-top: 0px;}
 .top-bar-section li:not(.has-form) a:not(.button){
   background-color: transparent;
   color: #666;
   line-height: 1rem;
   display: inline-block;
-    font-size: 12px;
-    text-transform: uppercase;
+  font-size: 12px;
+  text-transform: uppercase;
 
-   margin:0; 
+  margin:0;
   font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
   letter-spacing: .1rem;
-  padding: 28px 0 0px 0;
+  padding: 0;
   overflow: hidden;
   height: 66px;
+  line-height: 66px;
+  font-size: 16px;
 }
 .top-bar-section ul li:hover:not(.has-form) > a,.top-bar-section li.hover > a:not(.button),.top-bar-section li:not(.has-form) a:not(.button):hover,.no-js .top-bar-section ul li:hover > a,.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button){ background: transparent; color: #333;  }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
   background: transparent;
-  color: #333; 
+  color: #333;
   font-weight: normal;
-  
 }
 .top-bar-section li.is_active:not(.has-form) a:not(.button) {
     background: transparent;
     font-weight: 700;
-    color: #333; 
+    color: #333;
     border-bottom: 2px rgba(0,0,0,0.8) solid;
 }
 .top-bar-section li.is_active:not(.has-form) a:not(.button):hover {
     background: transparent;
     font-weight: 700;
-    color: #333; 
+    color: #333;
     border-bottom: 2px rgba(0,0,0,0.8) solid;
 }
 #main-menu{ padding-left: 0.93rem; padding-right: 0.93rem;}
@@ -124,7 +130,7 @@ padding: 8px 0px; margin: 0;
 
 #site-categories .posts-list{ list-style: none; padding: 0; margin: 0; }
 #site-categories .posts-list li{
-    
+
     margin: 0; padding: 12px 0;
     display: block;
     border-bottom: 1px solid #eee; font-size: 12px;
@@ -136,7 +142,7 @@ padding: 8px 0px; margin: 0;
 #site-categories .posts-list li:first-child{padding-top: 0px;}
 #site-categories .posts-list li:last-child{ border-bottom: none;}
 #site-categories .posts-list li a{    color: #666;
-    text-decoration: none;  white-space: nowrap; 
+    text-decoration: none;  white-space: nowrap;
     cursor: pointer;
   }
 #site-categories .posts-list li a:hover{text-decoration: underline;}
@@ -725,11 +731,12 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 #main-content .markdown-body .article:first-child{padding-top: 20px;}
 #main-content .markdown-body .a-content{padding-bottom: 20px; padding-left: 2px; line-height: 1.6rem;}
 
-#main-content .markdown-body .article .read-more{padding-left: 2px; color: #bababa; font-size: 14px;font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
-}
+#main-content .markdown-body .article .read-more{padding-left: 2px; color: #bababa; font-size: 14px;}
 #main-content .markdown-body .article .read-more a{color: #57ad68; }
 #main-content .markdown-body .article .f-img{ padding-bottom: 16px;}
-#main-content .markdown-body .article .posted-in{ padding-left: 2px; font-style: italic; padding-right: 2px;}
+#main-content .markdown-body .article .posted-in{ padding-left: 2px; padding-right: 2px;}
+#main-content .markdown-body .article .posted-in a{ color: #adabab; transition: all .4s; }
+#main-content .markdown-body .article .posted-in a:hover{ color: #57ad68; }
 #main-content .markdown-body .article .a-content-img{float: left; padding-right: 12px; padding-bottom: 12px;}
 #main-content .markdown-body .article .a-content-img img{ width: 150px;}
 #main-content .markdown-body .article .read-more .comments a{color: #bababa; text-decoration: none;}

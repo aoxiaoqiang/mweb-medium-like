@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-  {% if pageTitle.length %}  
+  {% if pageTitle.length %}
   {{ pageTitle }}
   {% else %}
   {{ siteName }}
@@ -25,14 +25,15 @@
   <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
   function before_search(){
-    var searchVal = 'site:{{ siteDomain }} ' + document.getElementById('search_input').value;
+    // var searchVal = 'site:{{ siteDomain }} ' + document.getElementById('search_input').value;
+    var searchVal = document.getElementById('search_input').value;
     document.getElementById('search_q').value = searchVal;
     return true;
   }
 </script>
   </head>
   <body class="antialiased hide-extras">
-    
+
     <div class="marketing off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
 
@@ -51,9 +52,10 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
-    <input type="hidden" id="search_q" name="q" value="" />
-    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+<form target="_blank" onsubmit="return before_search();" action="https://baidu.com/s" method="get">
+    <!-- <input type="hidden" id="search_q" name="q" value="" /> -->
+    <input tabindex="1" type="search" id="search_input"  placeholder="百度一下"/>
+    <input type="hidden" name="wd" id="search_q" maxlength="100" autocomplete="off">
 </form>
 </li>
           </ul>
@@ -79,7 +81,7 @@
 
         {% for p in categoriesTree %}
             <li><a href="{{ p.url }}">{{ p.name }}</a></li>
-        {% /for %} 
+        {% /for %}
 
       </ul>
     </aside>
@@ -88,6 +90,6 @@
 
 
         <section id="main-content" role="main" class="scroll-container">
-        
-       
+
+
 
